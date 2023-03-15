@@ -1,14 +1,13 @@
-title: Your awesome title
-author: GitHub User
-email: your-email@domain.com
+title: Damiao's Homepage
+author: Yu Damiao (于大淼)
+email: owendmyu@outlook.com
+
 description: > # this means to ignore newlines until "twitter_username:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  Welcome to Damiao's Homepage.
 
 # social links
-twitter_username: jekyllrb
-github_username:  jekyll
+# twitter_username: jekyllrb
+github_username:  yudm1992
 rss: rss
 # dribbble_username: jekyll
 # facebook_username: jekyll
@@ -33,15 +32,21 @@ show_excerpts: false # set to true to show excerpts on the homepage
 # refer to http://shopify.github.io/liquid/filters/date/ if you want to customize this
 minima:
   date_format: "%b %-d, %Y"
+  skin: classic
 
 # If you want to link only specific pages in your header, uncomment
 # this and add the path to the pages in order as they should show up
-#header_pages:
-# - about.html
+header_pages:
+- index.md
+- blogs.md
 
 # Build settings
 theme: minima
+markdown: kramdown
+
+gems: [jekyll-sitemap]
 
 plugins:
  - jekyll-feed
+ - jekyll-sitemap
  - jekyll-seo-tag
